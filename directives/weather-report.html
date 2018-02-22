@@ -1,0 +1,7 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ conversionObject.toDate(weatherObject.dt) | date: dateFormat }}</h3>
+        <h3 class="panel-title">Daytime temperature: Fahrenheit - {{ conversionObject.toFahrenheit(weatherObject.main.temp) }}&deg;</h3>
+        <h3 class="panel-title">Daytime temperature: Celsius - {{ conversionObject.toCelsius(weatherObject.main.temp) }}&deg;</h3>
+    </div>
+</div>
